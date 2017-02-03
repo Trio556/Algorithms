@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace Algorithms.Algorithms.BreadthFirstTraversal
 {
-    public class GraphManager
+    public class BreadthFirstTraversal
     {
+        
     }
 }

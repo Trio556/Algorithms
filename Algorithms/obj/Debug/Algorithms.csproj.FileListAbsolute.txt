@@ -1,1 +1,6 @@
 D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
