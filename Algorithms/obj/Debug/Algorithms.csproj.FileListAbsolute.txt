@@ -4,3 +4,9 @@ D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.exe
 D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
 D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.exe
 D:\ProgrammingProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+C:\CurrentProjects\GitHub\Algorithms\Algorithms\obj\Debug\Algorithms.pdb

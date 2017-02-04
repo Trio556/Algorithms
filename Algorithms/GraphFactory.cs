@@ -1,4 +1,5 @@
 ﻿using Algorithms.Algorithms;
+using Algorithms.Algorithms.BreadthFirstTraversal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,9 +30,24 @@ namespace Algorithms
 
                 Console.Write("Please Select One:");
                 var graphString = Console.ReadLine();
+                GraphAlgorithms graph;
 
-                throw new NotImplementedException();
+                if (!Enum.TryParse<GraphAlgorithms>(graphString, out graph))
+                    continue;
+
+                return GetGraph(graph);
             }
+        }
+
+        private ISetup GetGraph(GraphAlgorithms graph)
+        {
+            switch (graph)
+            {
+                case GraphAlgorithms.BreadthFirstTraversal:
+                    return new BreadthSetup();
+            }
+
+            return null;
         }
     }
 }

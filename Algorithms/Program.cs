@@ -41,6 +41,11 @@ namespace Algorithms
                         throw new NullReferenceException("An algorithm type has not been setup");
 
                     var algorithmSetup = factory.GetSetup();
+                    algorithmSetup.SetupAlgorithm();
+                    algorithmSetup.Run();
+
+                    Console.WriteLine("Would you like to continue?(y/n)");
+                    run = Console.ReadLine().ToLower();
                 }
             }
             catch(NullReferenceException nre)
