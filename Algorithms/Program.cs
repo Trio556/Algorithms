@@ -67,6 +67,8 @@ namespace Algorithms
             {
                 case AlgorithmTypes.Graph:
                     return new GraphFactory();
+                case AlgorithmTypes.LinkedList:
+                    return new LinkedListFactory();
             }
 
             return null;

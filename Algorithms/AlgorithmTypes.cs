@@ -2,6 +2,7 @@
 {
     public enum AlgorithmTypes
     {
-        Graph
+        Graph,
+        LinkedList
     }
 }
