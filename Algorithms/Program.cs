@@ -32,7 +32,7 @@ namespace Algorithms
                     AlgorithmTypes algorithmType;
 
                     //If it doesn't parse then rerun the loop
-                    if (!Enum.TryParse<AlgorithmTypes>(algorithmTypeString, out algorithmType))
+                    if (!Enum.TryParse(algorithmTypeString, out algorithmType))
                         continue;
 
                     var factory = GetFactory(algorithmType);

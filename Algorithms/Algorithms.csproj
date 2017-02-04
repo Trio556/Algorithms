@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\BreadthFirstTraversal\BreadthFirstTraversal.cs" />
-    <Compile Include="Algorithms\BreadthFirstTraversal\BreadthSetup.cs" />
-    <Compile Include="Algorithms\ISetup.cs" />
+    <Compile Include="Implementation\Graph\BreadthFirstTraversal\BreadthFirstTraversal.cs" />
+    <Compile Include="Implementation\Graph\BreadthFirstTraversal\BreadthSetup.cs" />
+    <Compile Include="Implementation\ISetup.cs" />
     <Compile Include="AlgorithmTypes.cs" />
     <Compile Include="GraphAlgorithms.cs" />
     <Compile Include="GraphFactory.cs" />

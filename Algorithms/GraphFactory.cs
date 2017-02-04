@@ -1,10 +1,6 @@
-﻿using Algorithms.Algorithms;
-using Algorithms.Algorithms.BreadthFirstTraversal;
+﻿using Algorithms.Implementation;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms
 {
@@ -32,7 +28,7 @@ namespace Algorithms
                 var graphString = Console.ReadLine();
                 GraphAlgorithms graph;
 
-                if (!Enum.TryParse<GraphAlgorithms>(graphString, out graph))
+                if (!Enum.TryParse(graphString, out graph))
                     continue;
 
                 return GetGraph(graph);
@@ -44,7 +40,7 @@ namespace Algorithms
             switch (graph)
             {
                 case GraphAlgorithms.BreadthFirstTraversal:
-                    return new BreadthSetup();
+                    return new Implementation.Graph.BreadthFirstTraversal.BreadthSetup();
             }
 
             return null;
