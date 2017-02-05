@@ -50,6 +50,7 @@
     <Compile Include="GraphAlgorithms.cs" />
     <Compile Include="GraphFactory.cs" />
     <Compile Include="IAlgorithmFactory.cs" />
+    <Compile Include="Implementation\LinkedList\IntNode.cs" />
     <Compile Include="Implementation\LinkedList\SortInsert\SortInsert.cs" />
     <Compile Include="Implementation\LinkedList\SortInsert\SortInsertSetup.cs" />
     <Compile Include="LinkedListAlgorithms.cs" />
