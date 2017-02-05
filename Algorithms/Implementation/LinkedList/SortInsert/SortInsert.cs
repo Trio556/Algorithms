@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Implementation.LinkedList.SortInsert
 {
+    /// <summary>
+    /// SortInsert acts as a self contained Singlerly Linked List but only implements Ascending Sorting
+    /// </summary>
     public class SortInsert
     {
         public IntNode Head { get; private set; }
         
+        /// <summary>
+        /// Places the new node inside the head in ascending order
+        /// </summary>
+        /// <param name="newNode"></param>
         public void SortedInsert(IntNode newNode)
         {
             //If there is no data or the data in the newNode is less than the current heads Data
