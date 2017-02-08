@@ -41,6 +41,8 @@ namespace Algorithms
             {
                 case GraphAlgorithms.BreadthFirstTraversal:
                     return new Implementation.Graph.BreadthFirstTraversal.BreadthSetup();
+                case GraphAlgorithms.DepthFirstTraversal:
+                    return new Implementation.Graph.DepthFirstTraversal.DepthSetup();
             }
 
             return null;

@@ -2,6 +2,7 @@
 {
     public enum GraphAlgorithms
     {
-        BreadthFirstTraversal
+        BreadthFirstTraversal,
+        DepthFirstTraversal
     }
 }

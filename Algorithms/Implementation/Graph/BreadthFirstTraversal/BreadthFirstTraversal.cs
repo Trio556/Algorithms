@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Implementation.Graph.BreadthFirstTraversal
 {
+    /// <summary>
+    /// A self contained Graph based Algorithm named BreadthFirstTraversal
+    /// </summary>
     public class BreadthFirstTraversal
     {
         private readonly int _graphSize;

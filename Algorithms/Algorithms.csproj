@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Implementation\Graph\BreadthFirstTraversal\BreadthFirstTraversal.cs" />
     <Compile Include="Implementation\Graph\BreadthFirstTraversal\BreadthSetup.cs" />
+    <Compile Include="Implementation\Graph\DepthFirstTraversal\DepthFirstTraversal.cs" />
+    <Compile Include="Implementation\Graph\DepthFirstTraversal\DepthSetup.cs" />
     <Compile Include="Implementation\ISetup.cs" />
     <Compile Include="AlgorithmTypes.cs" />
     <Compile Include="GraphAlgorithms.cs" />
