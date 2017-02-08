@@ -44,12 +44,7 @@ namespace Algorithms.Implementation.Graph.BreadthFirstTraversal
         {
             //Used to remove duplicates
             var visited = new bool[_graphSize];
-
-            for (int i = 0; i < visited.Length; i++)
-            {
-                visited[i] = false;
-            }
-
+            
             //Holds adjacent notes for the current node
             var queue = new Queue<int>();
 
