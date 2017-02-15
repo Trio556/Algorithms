@@ -3,6 +3,7 @@
     public enum AlgorithmTypes
     {
         Graph,
-        LinkedList
+        LinkedList,
+        SortAndSearch
     }
 }
