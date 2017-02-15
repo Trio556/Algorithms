@@ -61,7 +61,7 @@ namespace Algorithms
         /// </summary>
         /// <param name="algorithmType"></param>
         /// <returns></returns>
-        public static IAlgorithmFactory GetFactory(AlgorithmTypes algorithmType)
+        public static AlgorithmFactory GetFactory(AlgorithmTypes algorithmType)
         {
             switch (algorithmType)
             {

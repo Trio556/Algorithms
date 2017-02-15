@@ -51,10 +51,12 @@
     <Compile Include="AlgorithmTypes.cs" />
     <Compile Include="GraphAlgorithms.cs" />
     <Compile Include="GraphFactory.cs" />
-    <Compile Include="IAlgorithmFactory.cs" />
+    <Compile Include="AlgorithmFactory.cs" />
     <Compile Include="Implementation\LinkedList\IntNode.cs" />
     <Compile Include="Implementation\LinkedList\SortInsert\SortInsert.cs" />
     <Compile Include="Implementation\LinkedList\SortInsert\SortInsertSetup.cs" />
+    <Compile Include="Implementation\Search\BinarySearch\BinarySearch.cs" />
+    <Compile Include="Implementation\Search\BinarySearch\BinarySearchSetup.cs" />
     <Compile Include="LinkedListAlgorithms.cs" />
     <Compile Include="LinkedListFactory.cs" />
     <Compile Include="Program.cs" />
@@ -65,9 +67,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementation\Search\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

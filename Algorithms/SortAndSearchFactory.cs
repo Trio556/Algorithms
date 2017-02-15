@@ -7,11 +7,27 @@ using Algorithms.Implementation;
 
 namespace Algorithms
 {
-    public class SortAndSearchFactory : IAlgorithmFactory
+    public class SortAndSearchFactory : AlgorithmFactory
     {
-        public ISetup GetSetup()
+        public SortAndSearchFactory() : base("Sort and Search", typeof(SortAndSearchAlgorithms))
         {
-            throw new NotImplementedException();
+
+        }
+
+        public override ISetup GetSetup(string algorithmName)
+        {
+            SortAndSearchAlgorithms sortAndSearch;
+
+            if (Enum.TryParse(algorithmName, out sortAndSearch))
+            {
+                switch (sortAndSearch)
+                {
+                    case SortAndSearchAlgorithms.BinarySearch:
+                        return new Implementation.Search.BinarySearch.BinarySearchSetup();
+                }
+            }
+
+            return null;
         }
     }
 }

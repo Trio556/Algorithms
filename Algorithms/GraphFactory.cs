@@ -4,45 +4,26 @@ using System.Linq;
 
 namespace Algorithms
 {
-    public class GraphFactory : IAlgorithmFactory
+    public class GraphFactory : AlgorithmFactory
     {
-        private readonly GraphAlgorithms[] _graphAlgorithms;
-
-        public GraphFactory()
+        public GraphFactory() : base("Graph", typeof(GraphAlgorithms))
         {
-            _graphAlgorithms = Enum.GetValues(typeof(GraphAlgorithms)).Cast<GraphAlgorithms>().ToArray();
+
         }
 
-        public ISetup GetSetup()
+        public override ISetup GetSetup(string algorithmName)
         {
-            while (true)
-            {
-                Console.WriteLine("Select Graph Algorithm:");
+            GraphAlgorithms graph;
 
-                for (int i = 0; i < _graphAlgorithms.Count(); i++)
+            if (Enum.TryParse(algorithmName, out graph))
+            {
+                switch (graph)
                 {
-                    Console.WriteLine(_graphAlgorithms[i]);
+                    case GraphAlgorithms.BreadthFirstTraversal:
+                        return new Implementation.Graph.BreadthFirstTraversal.BreadthSetup();
+                    case GraphAlgorithms.DepthFirstTraversal:
+                        return new Implementation.Graph.DepthFirstTraversal.DepthSetup();
                 }
-
-                Console.Write("Please Select One:");
-                var graphString = Console.ReadLine();
-                GraphAlgorithms graph;
-
-                if (!Enum.TryParse(graphString, out graph))
-                    continue;
-
-                return GetGraph(graph);
-            }
-        }
-
-        private ISetup GetGraph(GraphAlgorithms graph)
-        {
-            switch (graph)
-            {
-                case GraphAlgorithms.BreadthFirstTraversal:
-                    return new Implementation.Graph.BreadthFirstTraversal.BreadthSetup();
-                case GraphAlgorithms.DepthFirstTraversal:
-                    return new Implementation.Graph.DepthFirstTraversal.DepthSetup();
             }
 
             return null;

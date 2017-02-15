@@ -7,43 +7,24 @@ using Algorithms.Implementation;
 
 namespace Algorithms
 {
-    public class LinkedListFactory : IAlgorithmFactory
+    public class LinkedListFactory : AlgorithmFactory
     {
-        private readonly LinkedListAlgorithms[] _linkedListAlgorithms;
-
-        public LinkedListFactory()
+        public LinkedListFactory() : base("Linked List", typeof(LinkedListAlgorithms))
         {
-            _linkedListAlgorithms = Enum.GetValues(typeof(LinkedListAlgorithms)).Cast<LinkedListAlgorithms>().ToArray();
+
         }
 
-        public ISetup GetSetup()
+        public override ISetup GetSetup(string algorithmName)
         {
-            while (true)
-            {
-                Console.WriteLine("Select Linked List Algorithm:");
+            LinkedListAlgorithms linkedList;
 
-                for (int i = 0; i < _linkedListAlgorithms.Count(); i++)
+            if (Enum.TryParse(algorithmName, out linkedList))
+            {
+                switch (linkedList)
                 {
-                    Console.WriteLine(_linkedListAlgorithms[i]);
+                    case LinkedListAlgorithms.SortedInsert:
+                        return new Implementation.LinkedList.SortInsert.SortInsertSetup();
                 }
-
-                Console.Write("Please Select One:");
-                var linkedListString = Console.ReadLine();
-                LinkedListAlgorithms linkedList;
-
-                if (!Enum.TryParse(linkedListString, out linkedList))
-                    continue;
-
-                return GetGraph(linkedList);
-            }
-        }
-
-        private ISetup GetGraph(LinkedListAlgorithms linkedList)
-        {
-            switch (linkedList)
-            {
-                case LinkedListAlgorithms.SortedInsert:
-                    return new Implementation.LinkedList.SortInsert.SortInsertSetup();
             }
 
             return null;
