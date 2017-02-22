@@ -69,6 +69,8 @@ namespace Algorithms
                     return new GraphFactory();
                 case AlgorithmTypes.LinkedList:
                     return new LinkedListFactory();
+                case AlgorithmTypes.SortAndSearch:
+                    return new SortAndSearchFactory();
             }
 
             return null;
