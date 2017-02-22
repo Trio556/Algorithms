@@ -1,6 +1,5 @@
 ﻿using Algorithms.Implementation;
 using System;
-using System.Linq;
 
 namespace Algorithms
 {
